@@ -20,7 +20,7 @@ class PageProfile extends React.Component{
               <div className="site-layout-background" style={{ padding: 24, textAlign: 'center' }}>
                 <Row align="middle">
                         <Col span={4} >
-                            <Avatar src="Profilepic.jpg" size={180}/>
+                            <Avatar src={require('../img/Profilepic.jpg')} alt="" size={180}/>
                         </Col>
 
                         <Col span={4}>

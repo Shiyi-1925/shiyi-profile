@@ -25,12 +25,12 @@ class RubbishBin extends React.Component{
 
               <Row gutter={24} justify="center">
               <Col span={10}>
-                <Card cover={<img src="rubbish_1.jpg"/>}>
+                <Card cover={<img src={require('../../img/rubbish_1.JPG')} alt=""/>}>
                   <Meta title="三维建模图" style={{textAlign:"center"}} />
                 </Card>
               </Col>
               <Col span={10}>
-                <Card cover={<img src="rubbish_2.jpg"/>}>
+                <Card cover={<img src={require('../../img/rubbish_2.JPG')} alt=""/>}>
                   <Meta title="投入口细节图" style={{textAlign:"center"}}/>
                 </Card>
               </Col>

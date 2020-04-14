@@ -24,17 +24,17 @@ class Suspension extends React.Component{
 
                 <Row gutter={16} justify="center">
                   <Col span={8}>
-                    <Card cover={<img src="front_control_arm.png"/>}>
+                    <Card cover={<img src={require('../../img/front_control_arm.png')} alt=""/>}>
                       <Meta title="控制臂 Catia 模型" style={{textAlign:"center"}} />
                     </Card>
                   </Col>
                   <Col span={8}>
-                    <Card cover={<img src="Ansys_stress.png"/>}>
+                    <Card cover={<img src={require('../../img/Ansys_stress.png')} alt=""/>}>
                       <Meta title="Ansys 应力仿真" style={{textAlign:"center"}} />
                     </Card>
                   </Col>
                   <Col span={8}>
-                    <Card cover={<img src="front_control_arm_cad.jpg"/>}>
+                    <Card cover={<img src={require('../../img/front_control_arm_cad.jpg')} alt=""/>}>
                       <Meta title="控制臂 CAD 设计图" style={{textAlign:"center"}} />
                     </Card>
                   </Col>

@@ -19,12 +19,12 @@ class Greener extends React.Component{
               
               <Row gutter={16} justify="space-around">
                 <Col span={4} textAlign="center">
-                  <Card cover={<img src="Go greener discovery.png" />}>
+                  <Card cover={<img src={require('../../img/Go greener discovery.png')} alt=""/>}>
                     <Meta title="宣传网站原型" style={{textAlign:"center"}}/>
                   </Card>
                 </Col>
                 <Col span={16} textAlign="center">                 
-                  <Card cover={<img src="02_EGGPLANT_CHEN SHIYI_REFINE_SKETCH.jpg" />}>
+                  <Card cover={<img src={require('../../img/02_EGGPLANT_CHEN SHIYI_REFINE_SKETCH.jpg')} alt=""/>}>
                     <Meta title="生态农场故事板" style={{textAlign:"center"}}/>
                   </Card>
                 </Col>

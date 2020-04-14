@@ -7,7 +7,7 @@ import {
 } from 'antd';
 
 
-const { Title, Paragraph } = Typography;
+const { Title } = Typography;
 
 const { Meta } = Card;
 
@@ -22,12 +22,12 @@ class MecaDesign extends React.Component{
 
                 <Row gutter={16} justify="center">
                   <Col span={8}>
-                    <Card cover={<img src="assembly.png"/>}>
+                    <Card cover={<img src={require('../../img/assembly.png')} alt=""/>}>
                       <Meta title="减速箱装配图" style={{textAlign:"center"}} />
                     </Card>
                   </Col>
                   <Col span={8}>
-                    <Card cover={<img src="减速箱建模.png"/>}>
+                    <Card cover={<img src={require('../../img/减速箱建模.PNG')} alt=""/>}>
                       <Meta title="减速箱SolidWorks建模" style={{textAlign:"center"}} />
                     </Card>
                   </Col>

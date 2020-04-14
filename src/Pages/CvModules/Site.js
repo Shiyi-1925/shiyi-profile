@@ -18,12 +18,12 @@ class Site extends React.Component{
               </Typography>
               <Row guttuer={16} justify="space-around" align="top">
                 <Col span={10} textAlign="center">
-                  <Card cover={<img src="sites.google.com_view_2019-2020-gr10_home(iPad Pro).png"/>}>
+                  <Card cover={<img src={require('../../img/sites.google.com_view_2019-2020-gr10_home(iPad Pro).png')} alt=""/>}>
                     <Meta title="项目首页" style={{textAlign:"center"}}/>
                   </Card>
                 </Col>
                 <Col span={10} textAlign="center">
-                  <Card cover={<img src="sites.google.com_view_2019-2020-gr10_marketing(iPad Pro).png"/>}>
+                  <Card cover={<img src={require('../../img/sites.google.com_view_2019-2020-gr10_marketing(iPad Pro).png')} alt=""/>}>
                     <Meta title="新闻稿和宣传手册展示页面" style={{textAlign:"center"}}/>
                   </Card>
                 </Col>

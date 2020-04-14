@@ -24,17 +24,17 @@ class Laplus extends React.Component{
 
                 <Row gutter={16} justify="center">
                   <Col span={8}>
-                    <Card cover={<img src="LaPlus_market.jpg"/>}>
+                    <Card cover={<img src={require('../../img/LaPlus_market.jpg')} alt=""/>}>
                       <Meta title="前期市场分析" style={{textAlign:"center"}} />
                     </Card>
                   </Col>
                   <Col span={8}>
-                    <Card cover={<img src="LaPlus_target.jpg"/>}>
+                    <Card cover={<img src={require('../../img/LaPlus_target.jpg')} alt=""/>}>
                       <Meta title="目标客户群体" style={{textAlign:"center"}} />
                     </Card>
                   </Col>
                   <Col span={8}>
-                    <Card cover={<img src="LaPlus_position.jpg"/>}>
+                    <Card cover={<img src={require('../../img/LaPlus_position.jpg')} alt=""/>}>
                       <Meta title="产品市场定位" style={{textAlign:"center"}} />
                     </Card>
                   </Col>

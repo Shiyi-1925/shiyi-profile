@@ -22,7 +22,8 @@ class App extends React.Component{
 
   constructor(props){
     super(props);
-    this.state={ openKeys: ['1'], selectedKeys: ['1'] };
+    this.state={ defaultSelectedKeys: ['1']};
+    document.title = '陈诗艺的个人主页';
   }
 
   render() {
@@ -39,9 +40,9 @@ class App extends React.Component{
               left: 0
             }}
           >
-            <Menu theme="dark" mode="vertical" defaultSelectedKeys={this.state.selectedKeys} openKeys={this.state.openKeys}>
+            <Menu theme="dark" mode="vertical" defaultSelectedKeys={this.state.defaultSelectedKeys}>
               <Menu.Item key="1">
-                <Link to={'/profile'}>
+                <Link to={'/'}>
                   <UserOutlined />
                   <span className="nav-text">我的首页</span>
                 </Link>

@@ -10,7 +10,7 @@ class PageChange extends React.Component {
         return (
             <div>
                 <Switch>
-                    <Route exact path='/profile' component={PageProfile}/>
+                    <Route exact path='/' component={PageProfile}/>
                     <Route exact path='/auto' component={PageAuto}/>
                     <Route exact path='/design' component={PageDesign}/>
                     <Route exact path='/contact' component={PageContact}/>

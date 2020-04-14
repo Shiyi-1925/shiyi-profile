@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { 
-    Layout, Descriptions,
+    Descriptions,
   } from 'antd';
 
 const Tel = "+86 18930719839";

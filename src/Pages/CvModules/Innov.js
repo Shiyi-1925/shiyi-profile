@@ -4,7 +4,6 @@ import {
   Col,
   Row,
   Card,
-  Descriptions
 } from 'antd';
 
 
@@ -33,13 +32,13 @@ class Innov extends React.Component{
 
                 <Row gutter={16} justify="center">
                   <Col span={10}>
-                    <Card cover={<img src="diagram_Lifi.png"/>}>
+                    <Card cover={<img src={require('../../img/diagram_Lifi.png')} alt=""/>}>
                       <Meta title="可见光通信原理" style={{textAlign:"center"}} description=
                       "迟楠,卢星宇,王灿, 等.基于LED的高速可见光通信[J].中国激光,2017,44(3)"/>
                     </Card>
                   </Col>
                   <Col span={10}>
-                    <Card cover={<img src="Lifi_test.png"/>}>
+                    <Card cover={<img src={require('../../img/Lifi_test.png')} alt=""/>}>
                       <Meta title="搭建在智能小车上的可见光通信装置" style={{textAlign:"center"}} />
                     </Card>
                   </Col>

@@ -32,17 +32,17 @@ class Mecatro extends React.Component{
 
               <Row gutter={24} justify="center">
               <Col span={8}>
-                <Card cover={<img src="broyeuse_entier.jpg"/>}>
+                <Card cover={<img src={require('../../img/broyeuse_entier.jpg')} alt=""/>}>
                   <Meta title="切割机总布置图" style={{textAlign:"center"}} />
                 </Card>
               </Col>
               <Col span={8}>
-                <Card cover={<img src="extrudeuse.jpg"/>}>
+                <Card cover={<img src={require('../../img/extrudeuse.jpg')} alt=""/>}>
                   <Meta title="搅拌机总布置图" style={{textAlign:"center"}}/>
                 </Card>
               </Col>
               <Col span={8}>
-                <Card cover={<img src="broyeuse_catia.png"/>}>
+                <Card cover={<img src={require('../../img/broyeuse_catia.png')} alt=""/>}>
                   <Meta title="切割机 Catia 模型" style={{textAlign:"center"}}/>
                 </Card>
               </Col>

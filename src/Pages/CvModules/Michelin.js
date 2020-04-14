@@ -24,12 +24,12 @@ class Michelin extends React.Component{
 
                 <Row gutter={[16,16]} justify="center">
                 <Col span={10}>
-                  <Card cover={<img src="ftire_test.gif"/>}>
+                  <Card cover={<img src={require('../../img/ftire_test.gif')} alt=""/>}>
                     <Meta title="FTire中的1/4整车模型仿真" style={{textAlign:"center"}} />
                   </Card>
                 </Col>
                 <Col span={10}>
-                  <Card cover={<img src="cleat_opt_L_xdir.jpg"/>}>
+                  <Card cover={<img src={require('../../img/cleat_opt_L_xdir.jpg')} alt=""/>}>
                     <Meta title="某款轮胎通过不同宽度楔块测试的频域分析（X方向）" style={{textAlign:"center"}}/>
                   </Card>
                 </Col>
