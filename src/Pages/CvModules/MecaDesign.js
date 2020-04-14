@@ -1,32 +1,38 @@
 import React from 'react';
 import { 
-    Layout, 
-    Typography
-  } from 'antd';
+  Typography,
+  Col,
+  Row,
+  Card
+} from 'antd';
 
-const { Content } = Layout;
 
 const { Title, Paragraph } = Typography;
+
+const { Meta } = Card;
 
 class MecaDesign extends React.Component{
     render(){
         return(
-            <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
-            <div className="site-layout-background" style={{ padding: 24, textAlign: 'left' }}>
+            <div className="site-layout-background" id="mecadesign" style={{ padding: 24, textAlign: 'left' }}>
               <Typography>
                   <Title>2016.08 三轴线双级斜齿圆柱齿轮减速箱设计</Title>
-                  <Paragraph>
-                    机械设计课程设计
-                  </Paragraph>
+                  <Title level={4}>机械设计课程设计</Title>
                 </Typography>
-                <img src="front_control_arm.png"/>
-                //控制臂Catia模型
-                <img src="assembly.png"/>
-                //减速箱装配图
-                <img src='减速箱建模.jpg'/>
-                //减速箱SolidWorks建模
+
+                <Row gutter={16} justify="center">
+                  <Col span={8}>
+                    <Card cover={<img src="assembly.png"/>}>
+                      <Meta title="减速箱装配图" style={{textAlign:"center"}} />
+                    </Card>
+                  </Col>
+                  <Col span={8}>
+                    <Card cover={<img src="减速箱建模.png"/>}>
+                      <Meta title="减速箱SolidWorks建模" style={{textAlign:"center"}} />
+                    </Card>
+                  </Col>
+                </Row>
             </div>
-          </Content>
         )
     }
 }

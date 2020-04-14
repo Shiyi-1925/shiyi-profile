@@ -1,27 +1,46 @@
 import React from 'react';
 import { 
-    Layout, 
-    Typography
+    Typography, Carousel, Row, Card, Col
   } from 'antd';
+  
+const { Title, Paragraph } = Typography;
 
-const { Content } = Layout;
-
-const { Title } = Typography;
+const{ Meta } = Card;
 
 class Badmin extends React.Component{
     render(){
         return(
-            <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
-            <div className="site-layout-background" style={{ padding: 24, textAlign: 'left' }}>
+            <div className="site-layout-background" id="badmin" style={{ padding: 24, textAlign: 'left' }}>
               <Typography>
                 <Title>2016.09 同济大学羽毛球协会宣传品设计</Title>
+                <Paragraph>设计工具：Adobe Illustrator, Adobe Photoshop</Paragraph>
               </Typography>
-              <img src="2016秋季嘉定羽协会员手册-外.jpg"/>
-              <img src="2016秋季嘉定羽协会员手册-内.jpg"/>
-              <img src="2016嘉定羽协活动卡.jpg"/>
-              <img src="2016秋嘉定羽协招新海报.jpg"/>
+
+              <Row gutter={[16,16]} justify="center" align="middle">
+                <Col span={12} textAlign="center">
+                  <Carousel autoplay>
+                    <Card cover={<img src="2016秋季嘉定羽协会员手册-外.jpg"/>}>
+                      <Meta title="2016秋季嘉定羽协会员手册封面" style={{textAlign:"center"}}/>
+                    </Card>
+                    <Card cover={<img src="2016秋季嘉定羽协会员手册-内.jpg"/>}>
+                      <Meta title="2016秋季嘉定羽协会员手册内页" style={{textAlign:"center"}}/>
+                    </Card>
+                  </Carousel>
+                </Col>
+              </Row>
+              <Row gutter={[16,16]} justify="space-around">
+                <Col span={8} textAlign="center">
+                  <Card cover={<img src="2016嘉定羽协活动卡.jpg"/>}>
+                    <Meta title="2016嘉定羽协活动卡" style={{textAlign:"center"}}/>
+                  </Card>
+                </Col>
+                <Col span={8} textAlign="center">                 
+                  <Card cover={<img src="2016秋嘉定羽协招新海报.jpg"/>}>
+                    <Meta title="2016秋嘉定羽协招新海报" style={{textAlign:"center"}}/>
+                  </Card>
+                </Col>
+              </Row>
             </div>
-          </Content>
         )
     }
 }

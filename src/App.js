@@ -5,7 +5,9 @@ import './App.css';
 import { 
   Layout, 
   Menu,
-  BackTop
+  BackTop,
+  Row,
+  Col,
 } from 'antd';
 import {
   PhoneOutlined,
@@ -13,36 +15,18 @@ import {
   CarOutlined,
   BulbOutlined,
 } from '@ant-design/icons';
-import enUS from 'antd/es/locale/en_US';
-import zhCN from 'antd/es/locale/zh_CN';
-import moment from 'moment';
-import 'moment/locale/zh-cn';
 
-moment.locale('en');
-
-const { Header, Content, Footer, Sider } = Layout;
+const { Header, Footer, Sider } = Layout;
 
 class App extends React.Component{
-  
-  constructor() {
-    super();
-    this.state = {
-      locale: enUS,
-    };
+
+  constructor(props){
+    super(props);
+    this.state={ openKeys: ['1'], selectedKeys: ['1'] };
   }
 
-  changeLocale = e => {
-    const localeValue = e.target.value;
-    this.setState({ locale: localeValue });
-    if (!localeValue) {
-      moment.locale('en');
-    } else {
-      moment.locale('zh-cn');
-    }
-  };
-
   render() {
-    const { locale } = this.state;
+
     return (
       <BrowserRouter>
         <BackTop/>
@@ -55,29 +39,29 @@ class App extends React.Component{
               left: 0
             }}
           >
-            <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
+            <Menu theme="dark" mode="vertical" defaultSelectedKeys={this.state.selectedKeys} openKeys={this.state.openKeys}>
               <Menu.Item key="1">
                 <Link to={'/profile'}>
                   <UserOutlined />
-                  <span className="nav-text">About Shiyi</span>
+                  <span className="nav-text">我的首页</span>
                 </Link>
               </Menu.Item>
               <Menu.Item key="2">
                 <Link to={'/auto'}>
                   <CarOutlined />
-                  <span className="nav-text">Professional Experience</span>
+                  <span className="nav-text">项目与实习经历</span>
                 </Link>
               </Menu.Item>
               <Menu.Item key="3">
                 <Link to={'/design'}>
                   <BulbOutlined />
-                  <span className="nav-text">Design Inspirations</span>
+                  <span className="nav-text">设计创意灵感</span>
                 </Link>
               </Menu.Item>
               <Menu.Item key="4">
                 <Link to={'/contact'}>
                   <PhoneOutlined />
-                  <span className="nav-text">Contact</span>
+                  <span className="nav-text">联系我</span>
                 </Link>
               </Menu.Item>
             </Menu>
@@ -86,7 +70,13 @@ class App extends React.Component{
           <Layout>
             <Header className="site-layout-background" style={{ padding: 0 }} />
             <PageChange/>
-            <Footer style={{ textAlign: 'center' }}>Shiyi Chen</Footer>
+            <Footer style={{ textAlign:'center' }}>
+              <Row>
+                <Col xxl={10}>Shiyi Chen</Col>
+                <Col xxl={4}>Version 1.0</Col>
+                <Col xxl={10}>2020.04 </Col>
+              </Row>
+            </Footer>
           </Layout>
 
         </Layout>

@@ -1,39 +1,53 @@
 import React from 'react';
 import { 
-    Layout, 
-    Typography
+    Typography,
+    Col,
+    Card,
+    Row
   } from 'antd';
-
-const { Content } = Layout;
 
 const { Title, Paragraph } = Typography;
 
+const { Meta } = Card;
+
 class Mecatro extends React.Component{
-    render(){
+  
+  render(){
         return(
-            <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
-            <div className="site-layout-background" style={{ padding: 24, textAlign: 'left' }}>
+            <div className="site-layout-background" id="mecatro" style={{ padding: 24, textAlign: 'left' }}>
               <Typography>
                   <Title>2020.03 以回收塑料制成的3D打印线材</Title>
+                  <Title level={4}>Mines Paristech - Projet de Mécatronique</Title>
                   <Paragraph>
-                    Mines Paristech - Projet de Mécatronique
+                    来自巴黎艺术装饰学院的客户希望回收废弃塑料碎片和废弃建筑材料，制成供3D打印使用的线材，用于打印初期的设计原型，减少材料浪费。
                   </Paragraph>
-                  //修改文字描述
                   <Paragraph>
-                    text
-                    法语主页：https://sites.google.com/view/2019-2020-gr10/home
+                    整个装置由发动机、切割机、搅拌机、电动线材卷盘等组成。
+                  </Paragraph>
+                  <Paragraph>
+                    项目主页：<span><a href="https://sites.google.com/view/2019-2020-gr10/home" target="_blank" rel="noopener noreferrer">
+                      https://sites.google.com/view/2019-2020-gr10/home</a></span>
                   </Paragraph>
               </Typography>
-              //图片间距 自动调整大小 加图片注释
-              <img src="broyeuse_entier.jpg" height='300pt'/>
-              //切割机总布置图
-              <img src="extrudeuse.jpg" height='300pt'/>
-              //搅拌机总布置图
-              <img src="broyeuse_catia.png" height='300pt'/>
-              //切割机Catia模型
-              //搅拌机Catia模型
+
+              <Row gutter={24} justify="center">
+              <Col span={8}>
+                <Card cover={<img src="broyeuse_entier.jpg"/>}>
+                  <Meta title="切割机总布置图" style={{textAlign:"center"}} />
+                </Card>
+              </Col>
+              <Col span={8}>
+                <Card cover={<img src="extrudeuse.jpg"/>}>
+                  <Meta title="搅拌机总布置图" style={{textAlign:"center"}}/>
+                </Card>
+              </Col>
+              <Col span={8}>
+                <Card cover={<img src="broyeuse_catia.png"/>}>
+                  <Meta title="切割机 Catia 模型" style={{textAlign:"center"}}/>
+                </Card>
+              </Col>
+              </Row>
             </div>
-          </Content>
         )
     }
 }
