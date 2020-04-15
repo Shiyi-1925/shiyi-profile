@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Link} from 'react-router-dom';
+import {HashRouter, Link} from 'react-router-dom';
 import PageChange from './Pages/PageChange';
 import './App.css';
 import { 
@@ -29,7 +29,7 @@ class App extends React.Component{
   render() {
 
     return (
-      <BrowserRouter>
+      <HashRouter>
         <BackTop/>
         <Layout className="site-layout" style={{ marginLeft: 200 }}>
           <Sider
@@ -81,7 +81,7 @@ class App extends React.Component{
           </Layout>
 
         </Layout>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
