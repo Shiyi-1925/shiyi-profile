@@ -11,7 +11,7 @@ import {
 class PageDesign extends React.Component{  
     render() {
       return (       
-        <Anchor>  
+        <>  
             <div className="site-layout-background" style={{ padding: 24, textAlign: 'left' }}>
               <Timeline mode='left'>
                 <Timeline.Item label="2020.03">Mécatronique 网站设计</Timeline.Item>
@@ -24,7 +24,7 @@ class PageDesign extends React.Component{
           <Greener/>
           <RubbishBin/>
           <Badmin/>
-        </Anchor>
+        </>
       )
     }
 }

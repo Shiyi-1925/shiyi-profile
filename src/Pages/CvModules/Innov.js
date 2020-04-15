@@ -22,10 +22,14 @@ class Innov extends React.Component{
                   </Title>
                   <Paragraph>
                     LED 可见光通信是一种新兴的光通信技术，它能够利用LED 发出的高频明暗闪烁灯光实现信息的调制传输，而人眼无法察觉其闪烁。
-                    LED 可见光通信相比较于传统通信方式，在多方面有显著优势。因而利用LiFi 通信可以针对现有传感器的弊端，对智能驾驶感知系统起到重要的补充作用，实现与周围车辆的即时通信。
+                    </Paragraph>
+                  <Paragraph>
+                    利用LiFi 通信可以针对现有传感器的弊端，对智能驾驶感知系统起到重要的补充作用，实现与周围车辆的即时通信。
                   </Paragraph>
                   <Paragraph>
                     我们开发了一种基于普通车灯和硅光传感器的LED通信装置，个人负责接收端通信原理设计和电路板制作、数据分析处理等。
+                    </Paragraph>
+                  <Paragraph>
                     项目参与申请发明专利《一种基于车联网的智能交通场景模拟微缩模型》。
                   </Paragraph>
                 </Typography>

@@ -15,7 +15,7 @@ class Ramp extends React.Component{
     render(){
         return(
             <div className="site-layout-background" id="ramp" style={{ padding: 24, textAlign: 'left' }}>
-              <Typography>
+              <Typography >
                   <Title>2019.06 上匝道合流区车辆协同运动控制策略</Title>
                   <Title level={4} >
                     同济大学本科毕业设计
@@ -24,8 +24,14 @@ class Ramp extends React.Component{
                     高速公路上匝道合流区中，匝道车辆的汇入往往会扰乱主干道车流的秩序，造成车速起伏，车辆频繁起动、刹车和变道。
                   </Paragraph>
                   <Paragraph>
-                    本文设计了由局域控制中心集中调控的自动驾驶车辆协同运动控制策略，以单车道汇入工况为研究对象，以IDM 模型状态预测、五次多项式轨迹、碰撞安全性判断、虚拟车跟驰模型等方法为基础规划最优汇入方案，保证匝道车辆汇入过程中的自身及相关车辆的行车安全和乘坐舒适度，并提升整个路网的通行效率。
+                    本文设计了由局域控制中心集中调控的自动驾驶车辆协同运动控制策略，以单车道汇入工况为研究对象，
                   </Paragraph>
+                  <Paragraph>
+                    以IDM 模型状态预测、五次多项式轨迹、碰撞安全性判断、虚拟车跟驰模型等方法为基础规划最优汇入方案
+                  </Paragraph>
+                  <Paragraph>
+                    保证匝道车辆汇入过程中的自身及相关车辆的行车安全和乘坐舒适度，并提升整个路网的通行效率。
+                    </Paragraph>
                 </Typography>
 
                 <Row gutter={[16,16]} justify="center">
