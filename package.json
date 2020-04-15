@@ -2,7 +2,7 @@
   "name": "shiyi_project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Shiyi-1925.github.io/",
+  "homepage": "https://Shiyi-1925.github.io/shiyi-profile",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
