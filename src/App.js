@@ -73,9 +73,9 @@ class App extends React.Component{
             <PageChange/>
             <Footer style={{ textAlign:'center' }}>
               <Row>
-                <Col xxl={10}>Shiyi Chen</Col>
-                <Col xxl={4}>Version 1.6</Col>
-                <Col xxl={10}>2020.04 </Col>
+                <Col xl={10}>Shiyi Chen</Col>
+                <Col xl={4}>Version 1.7</Col>
+                <Col xl={10}>2020.04 </Col>
               </Row>
             </Footer>
           </Layout>

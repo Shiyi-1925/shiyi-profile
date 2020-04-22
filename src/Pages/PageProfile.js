@@ -31,7 +31,7 @@ class PageProfile extends React.Component{
                             <Steps direction="vertical" current={2}>
                                     <Step title="同济大学汽车学院车辆工程学士" description={<p>大四时参加巴黎中央理工学校（CentraleSupélec）为期六个月的交换项目<br/>本科期间还于复旦大学辅修新闻学专业</p>}/>
                                     <Step title="巴黎高科国立矿业学校 (Mines ParisTech) 工程师二年级" description={<p>法国工程师文凭，等同于硕士一年级在读<br/>专业方向为信息系统管理</p>}/>
-                                    <Step title="寻找一份短期实习" description={<p>Web前端开发、App开发、数据分析和开发类实习岗位<br/>五月底可入职</p>}/>
+                                    <Step title="寻找一份短期实习" description={<p>Web前端开发类、及智能驾驶相关实习岗位<br/>五月底可入职</p>}/>
                             </Steps>
                         </Col>
                     </Row>
