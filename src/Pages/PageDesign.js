@@ -14,7 +14,7 @@ class PageDesign extends React.Component{
         <>  
             <div className="site-layout-background" style={{ padding: 24, textAlign: 'left' }}>
               <Timeline mode='left'>
-                <Timeline.Item label="2020.03">Mécatronique 网站设计</Timeline.Item>
+                <Timeline.Item label="2020.03">Mécatronique 网站及新闻简报设计</Timeline.Item>
                 <Timeline.Item label="2019.10">Go Greener 概念生态农场</Timeline.Item>
                 <Timeline.Item label="2018.07">公共垃圾桶设计</Timeline.Item>
                 <Timeline.Item label="2016.09">同济大学羽毛球协会宣传品设计</Timeline.Item>

@@ -74,7 +74,7 @@ class App extends React.Component{
             <Footer style={{ textAlign:'center' }}>
               <Row>
                 <Col xl={10}>Shiyi Chen</Col>
-                <Col xl={4}>Version 1.7</Col>
+                <Col xl={4}>Version 1.8</Col>
                 <Col xl={10}>2020.04 </Col>
               </Row>
             </Footer>
