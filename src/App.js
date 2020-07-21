@@ -1,13 +1,16 @@
 import React from 'react';
-import {HashRouter, Link} from 'react-router-dom';
+import intl from 'react-intl-universal';
+import { HashRouter, Link } from 'react-router-dom';
 import PageChange from './Pages/PageChange';
 import './App.css';
-import { 
-  Layout, 
+import {
+  Layout,
   Menu,
   BackTop,
   Row,
   Col,
+  Button,
+  Dropdown,
 } from 'antd';
 import {
   PhoneOutlined,
@@ -18,19 +21,38 @@ import {
 
 const { Header, Footer, Sider } = Layout;
 
-class App extends React.Component{
+const locales = {
+  "en-US": require('./locales/en-US.json'),
+  "zh-CN": require('./locales/zh-CN.json'),
+};
 
-  constructor(props){
+class App extends React.Component {
+
+  constructor(props) {
     super(props);
-    this.state={ defaultSelectedKeys: ['1']};
-    document.title = '陈诗艺的个人主页';
+    this.state = { defaultSelectedKeys: ['1'], initDone: false };
+    document.title = intl.get('PAGENAME');
+  }
+
+  componentDidMount() {
+    this.loadLocales();
+  }
+
+  loadLocales() {
+    intl.init({
+      currentLocale: 'zh-CN',
+      locales,
+    })
+      .then(() => {
+        this.setState({ initDone: true });
+      });
   }
 
   render() {
 
     return (
       <HashRouter>
-        <BackTop/>
+        <BackTop />
         <Layout className="site-layout" style={{ marginLeft: 200 }}>
           <Sider
             style={{
@@ -44,38 +66,50 @@ class App extends React.Component{
               <Menu.Item key="1">
                 <Link to={'/'}>
                   <UserOutlined />
-                  <span className="nav-text">我的首页</span>
+                  <span className="nav-text">{intl.get('LANDING_PAGE')}</span>
                 </Link>
               </Menu.Item>
               <Menu.Item key="2">
                 <Link to={'/auto'}>
                   <CarOutlined />
-                  <span className="nav-text">项目与实习经历</span>
+                  <span className="nav-text">{intl.get('PROJECT')}</span>
                 </Link>
               </Menu.Item>
               <Menu.Item key="3">
                 <Link to={'/design'}>
                   <BulbOutlined />
-                  <span className="nav-text">设计创意灵感</span>
+                  <span className="nav-text">{intl.get('DESIGN')}</span>
                 </Link>
               </Menu.Item>
               <Menu.Item key="4">
                 <Link to={'/contact'}>
                   <PhoneOutlined />
-                  <span className="nav-text">联系我</span>
+                  <span className="nav-text">{intl.get('CONTACT')}</span>
                 </Link>
               </Menu.Item>
+              <Menu.Item key="5" disabled="true" >
+                <Dropdown overlay={
+                  <Menu>
+                    <Menu.Item key="1" onClick={intl.load({ currentLocale: 'zh-CN', locales })}>中文</Menu.Item>
+                    <Menu.Item key="2" onClick={intl.load({ currentLocale: 'en-US', locales })}>English</Menu.Item>
+                  </Menu>
+                }>
+                  <Button>
+                    Language 语言
+                  </Button>
+                </Dropdown>
+              </Menu.Item>
             </Menu>
-          </Sider> 
-          
+          </Sider>
+
           <Layout>
             <Header className="site-layout-background" style={{ padding: 0 }} />
-            <PageChange/>
-            <Footer style={{ textAlign:'center' }}>
+            <PageChange />
+            <Footer style={{ textAlign: 'center' }}>
               <Row>
                 <Col xl={10}>Shiyi Chen</Col>
-                <Col xl={4}>Version 1.8</Col>
-                <Col xl={10}>2020.04 </Col>
+                <Col xl={4}>Version 1.9</Col>
+                <Col xl={10}>2020.07 </Col>
               </Row>
             </Footer>
           </Layout>
