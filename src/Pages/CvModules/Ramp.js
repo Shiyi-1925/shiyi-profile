@@ -76,7 +76,7 @@ class Ramp extends React.Component {
         <Row justify="center">
           <Col span={16}>
             <Card cover={<img src={require('../../img/图3.18 支付函数等高线图.jpg')} alt="" />}>
-              <Meta title={intl.get('RAMP_DESC12')} style={{ textAlign: "center" }} description="车辆安全性、通行效率、舒适性指标越高，支付函数越低。" />
+              <Meta title={intl.get('RAMP_DESC12')} style={{ textAlign: "center" }} description={intl.get('RAMP_DESC13')} />
             </Card>
           </Col>
         </Row>

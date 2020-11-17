@@ -4,7 +4,7 @@ import {
     Descriptions,
 } from 'antd';
 
-const Tel = "+86 18930719839";
+const Tel = "+33 7 62 28 68 62";
 const Address = "shiyi.chen@mines-paristech.fr";
 const LinkedInAddress = "http://www.linkedin.com/in/shiyi-chen-090ab7167";
 const GitHubLink = "https://github.com/Shiyi-1925";

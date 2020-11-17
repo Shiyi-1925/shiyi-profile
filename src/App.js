@@ -40,7 +40,7 @@ class App extends React.Component {
 
   loadLocales() {
     intl.init({
-      currentLocale: 'zh-CN',
+      currentLocale: 'en-US',
       locales,
     })
       .then(() => {
@@ -53,8 +53,9 @@ class App extends React.Component {
     return (
       <HashRouter>
         <BackTop />
-        <Layout className="site-layout" style={{ marginLeft: 200 }}>
+        <Layout className="site-layout" style={{ marginLeft: 300}}>
           <Sider
+            width="300px"
             style={{
               overflow: 'auto',
               height: '100vh',
@@ -63,7 +64,7 @@ class App extends React.Component {
             }}
           >
             <Menu theme="dark" mode="vertical" defaultSelectedKeys={this.state.defaultSelectedKeys}>
-              <Menu.Item key="1">
+              <Menu.Item key="1" /*style={{height: '80px'}}*/ >
                 <Link to={'/'}>
                   <UserOutlined />
                   <span className="nav-text">{intl.get('LANDING_PAGE')}</span>
@@ -87,7 +88,7 @@ class App extends React.Component {
                   <span className="nav-text">{intl.get('CONTACT')}</span>
                 </Link>
               </Menu.Item>
-              <Menu.Item key="5" disabled="true" >
+              {/* <Menu.Item key="5">
                 <Dropdown overlay={
                   <Menu>
                     <Menu.Item key="1" onClick={intl.load({ currentLocale: 'zh-CN', locales })}>中文</Menu.Item>
@@ -98,7 +99,7 @@ class App extends React.Component {
                     Language 语言
                   </Button>
                 </Dropdown>
-              </Menu.Item>
+              </Menu.Item> */}
             </Menu>
           </Sider>
 
@@ -108,8 +109,8 @@ class App extends React.Component {
             <Footer style={{ textAlign: 'center' }}>
               <Row>
                 <Col xl={10}>Shiyi Chen</Col>
-                <Col xl={4}>Version 1.9</Col>
-                <Col xl={10}>2020.07 </Col>
+                <Col xl={4}>Version 2.0</Col>
+                <Col xl={10}>2020.11 </Col>
               </Row>
             </Footer>
           </Layout>
