@@ -7,11 +7,11 @@
     "NAME": "Shiyi CHEN",
     "BACHELOR": "Bachelor’s degree in Vehicle Engineering, Tongji University, China",
     "BACHELOR_DESC": "Academic exchange in CentraleSupélec in France for six months",
-    "MASTER": "Third-year engineering student in Mines ParisTech, France",
+    "MASTER": "Final-year engineering student in Mines ParisTech, France",
     "MASTER_DESC1": "Equivalent to the last year of Master’s degree",
     "MASTER_DESC2": "Majoring in Management of Information Systems",
-    "STAGE": "Looking for a final-year internship",
-    "STAGE_DESC": "At least for six months, starting from March 2021",
+    "JOB": "Looking for a full-time position",
+    "JOB_DESC": "In information technologies，passionated by data developement and product management",
     "ENGLISH": "English",
     "FRENCH": "French",
     "SPANISH": "Spanish",
@@ -98,5 +98,10 @@
     "BADMIN_DESIGN_DESC5": "Poster, Autumn 2016",
     "CONTACT_HEAD": "Contact",
     "TEL": "Mobile",
-    "YEAR": "years"
+    "YEAR": "years",
+    "H4R": "Product development intern in #HereForRetail, Paris",
+    "H4R_DESC1": "Development of data analytics and strategy platform",
+    "H4R_DESC2":"Responsible for cloud data storage and execution time optimization",
+    "H4R_DESC3":"Studies on data pre-processing based on PySpark and its cloud deployment (Docker, Kubernetes, Azure Blob Storage)"
+
 }

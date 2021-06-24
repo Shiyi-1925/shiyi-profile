@@ -38,7 +38,7 @@ class PageProfile extends React.Component {
                             <Steps direction="vertical" current={2}>
                                 <Step title={intl.get('BACHELOR')} description={<p>{intl.get('BACHELOR_DESC')}{/*<br />本科期间还于复旦大学辅修新闻学专业*/}</p>} />
                                 <Step title={intl.get('MASTER')} description={<p>{intl.get('MASTER_DESC1')}<br />{intl.get('MASTER_DESC2')}</p>} />
-                                <Step title={intl.get('STAGE')} description={<p>{intl.get('STAGE_DESC')}</p>} />
+                                <Step title={intl.get('JOB')} description={<p>{intl.get('JOB_DESC')}</p>} />
                             </Steps>
                         </Col>
                     </Row>
@@ -46,7 +46,7 @@ class PageProfile extends React.Component {
 
                 <div className="site-layout-background" style={{ padding: 24, textAlign: 'left' }}>
                     <Card>
-                        <Card.Grid hoverable={true} style={gridStyle} ><Title level={4}>{intl.get('ENGLISH')}</Title><Paragraph>TOEFL C1</Paragraph></Card.Grid>
+                        <Card.Grid hoverable={true} style={gridStyle} ><Title level={4}>{intl.get('ENGLISH')}</Title><Paragraph>TOEFL 104</Paragraph></Card.Grid>
                         <Card.Grid hoverable={true} style={gridStyle} ><Title level={4}>{intl.get('FRENCH')}</Title><Paragraph>TCF B2</Paragraph></Card.Grid>
                         <Card.Grid hoverable={true} style={gridStyle} ><Title level={4}>{intl.get('SPANISH')}</Title><Paragraph>{intl.get('SPANISH_LEVEL')}</Paragraph></Card.Grid>
                         <Card.Grid hoverable={true} style={gridStyle} ><Title level={4}>{intl.get('CHINESE')}</Title><Paragraph>{intl.get('CHINESE_LEVEL')}</Paragraph></Card.Grid>
@@ -60,6 +60,7 @@ class PageProfile extends React.Component {
                         <Tag icon={<LaptopOutlined />} color="success">Python</Tag>
                         <Tag icon={<LaptopOutlined />} color="success">SQL</Tag>
                         <Tag icon={<LaptopOutlined />} color="success">Spring Framework</Tag>
+                        <Tag icon={<LaptopOutlined />} color="success">Spark</Tag>
                         <Tag icon={<LaptopOutlined />} color="success">React</Tag>
                         <Tag icon={<LaptopOutlined />} color="success">Vue</Tag>
                         <Tag icon={<LaptopOutlined />} color="success">Unity</Tag>

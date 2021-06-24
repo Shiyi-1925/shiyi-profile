@@ -10,8 +10,8 @@
     "MASTER": "巴黎高科国立矿业学校 (Mines ParisTech) 工程师三年级",
     "MASTER_DESC1": "法国工程师文凭，等同于硕士二年级在读",
     "MASTER_DESC2": "专业方向为信息系统管理",
-    "STAGE": "",
-    "STAGE_DESC": "",
+    "JOB": "",
+    "JOB_DESC": "",
     "ENGLISH": "英语",
     "FRENCH": "法语",
     "SPANISH": "西班牙语",
@@ -96,5 +96,9 @@
     "BADMIN_DESIGN_DESC5": "2016秋嘉定羽协招新海报",
     "CONTACT_HEAD": "联系方式",
     "TEL": "联系电话",
-    "YEAR": "年"
+    "YEAR": "年",
+    "H4R": "",
+    "H4R_DESC1": "",
+    "H4R_DESC2":"",
+    "H4R_DESC3":""
 }
