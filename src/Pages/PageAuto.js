@@ -1,5 +1,6 @@
 import React from 'react';
 import intl from 'react-intl-universal';
+import H4R from './CvModules/H4R';
 import Bounce from './CvModules/Bounce';
 import Nio from './CvModules/Nio';
 // import Mecatro from './CvModules/Mecatro';
@@ -19,6 +20,7 @@ class PageAuto extends React.Component {
       <>
         <div className="site-layout-background" style={{ padding: 24, textAlign: 'left' }}>
           <Timeline mode='left'>
+            <Timeline.Item label="2021. 03">{intl.get('H4R')}</Timeline.Item>
             <Timeline.Item label="2020. 09">{intl.get('BOUNCE')}</Timeline.Item>
             <Timeline.Item label="2020. 06">{intl.get('NIO')}</Timeline.Item>
             {/* <Timeline.Item label="2020. 03">以回收塑料制成的3D打印线材</Timeline.Item> */}
@@ -32,6 +34,7 @@ class PageAuto extends React.Component {
         </div>
 
         {/* <Mecatro /> */}
+        <H4R />
         <Bounce />
         <Nio />
         <Ramp />

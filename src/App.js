@@ -109,8 +109,8 @@ class App extends React.Component {
             <Footer style={{ textAlign: 'center' }}>
               <Row>
                 <Col xl={10}>Shiyi Chen</Col>
-                <Col xl={4}>Version 2.0</Col>
-                <Col xl={10}>2020.11 </Col>
+                <Col xl={4}>Version 3.0</Col>
+                <Col xl={10}>2021.06 </Col>
               </Row>
             </Footer>
           </Layout>
