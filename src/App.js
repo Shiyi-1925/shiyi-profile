@@ -1,23 +1,10 @@
+import { BulbOutlined, CarOutlined, PhoneOutlined, UserOutlined } from '@ant-design/icons';
+import { BackTop, Col, Layout, Menu, Row } from 'antd';
 import React from 'react';
 import intl from 'react-intl-universal';
 import { HashRouter, Link } from 'react-router-dom';
-import PageChange from './Pages/PageChange';
 import './App.css';
-import {
-  Layout,
-  Menu,
-  BackTop,
-  Row,
-  Col,
-  Button,
-  Dropdown,
-} from 'antd';
-import {
-  PhoneOutlined,
-  UserOutlined,
-  CarOutlined,
-  BulbOutlined,
-} from '@ant-design/icons';
+import PageChange from './Pages/PageChange';
 
 const { Header, Footer, Sider } = Layout;
 
@@ -53,7 +40,7 @@ class App extends React.Component {
     return (
       <HashRouter>
         <BackTop />
-        <Layout className="site-layout" style={{ marginLeft: 300}}>
+        <Layout className="site-layout" style={{ marginLeft: 300 }}>
           <Sider
             width="300px"
             style={{

@@ -1,11 +1,7 @@
+import { Card, Col, Row, Typography } from 'antd';
 import React from 'react';
 import intl from 'react-intl-universal';
-import {
-  Typography,
-  Col,
-  Row,
-  Card
-} from 'antd';
+import bounce_screenshot from '../../img/bounce_screenshot.png';
 
 
 const { Title, Paragraph } = Typography;
@@ -30,9 +26,9 @@ class Bounce extends React.Component {
 
         <Row gutter={[16, 16]} justify="center">
           <Col span={16}>
-            <Card cover={<img src={require('../../img/Bounce_screenshot.png')} alt="" />}>
-                <Meta title={intl.get('BOUNCE_DESC3')} style={{ textAlign: "center" }} 
-                    description={<a href={UnityGameAddress} target="_blank" rel="noopener noreferrer">{UnityGameAddress}</a>}/>
+            <Card cover={<img src={bounce_screenshot} alt="" />}>
+              <Meta title={intl.get('BOUNCE_DESC3')} style={{ textAlign: "center" }}
+                description={<a href={UnityGameAddress} target="_blank" rel="noopener noreferrer">{UnityGameAddress}</a>} />
             </Card>
           </Col>
         </Row>

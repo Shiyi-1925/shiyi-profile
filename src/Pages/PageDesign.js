@@ -1,12 +1,10 @@
+import { Timeline } from 'antd';
 import React from 'react';
 import intl from 'react-intl-universal';
-import Site from './CvModules/Site';
+import Badmin from './CvModules/Badmin';
 import Greener from './CvModules/Greener';
 import RubbishBin from './CvModules/RubbishBin';
-import Badmin from './CvModules/Badmin';
-import {
-  Timeline
-} from 'antd';
+import Site from './CvModules/Site';
 
 
 class PageDesign extends React.Component {

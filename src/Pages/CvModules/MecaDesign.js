@@ -1,10 +1,7 @@
+import { Card, Col, Row, Typography } from 'antd';
 import React from 'react';
-import {
-  Typography,
-  Col,
-  Row,
-  Card
-} from 'antd';
+import assembly from '../../img/assembly.png';
+import gearbox from '../../img/gearbox.png';
 
 
 const { Title } = Typography;
@@ -22,12 +19,12 @@ class MecaDesign extends React.Component {
 
         <Row gutter={16} justify="center">
           <Col span={8}>
-            <Card cover={<img src={require('../../img/assembly.png')} alt="" />}>
+            <Card cover={<img src={assembly} alt="" />}>
               <Meta title="减速箱装配图" style={{ textAlign: "center" }} />
             </Card>
           </Col>
           <Col span={8}>
-            <Card cover={<img src={require('../../img/减速箱建模.PNG')} alt="" />}>
+            <Card cover={<img src={gearbox} alt="" />}>
               <Meta title="减速箱SolidWorks建模" style={{ textAlign: "center" }} />
             </Card>
           </Col>

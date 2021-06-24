@@ -1,8 +1,8 @@
+import { Card, Col, Row, Typography } from 'antd';
 import React from 'react';
 import intl from 'react-intl-universal';
-import {
-  Typography, Row, Card, Col
-} from 'antd';
+import go_greener_discovery from '../../img/go_greener_discovery.png';
+import go_greener_sketch from '../../img/go_greener_sketch.jpg';
 
 const { Title, Paragraph } = Typography;
 
@@ -20,12 +20,12 @@ class Greener extends React.Component {
 
         <Row gutter={16} justify="space-around">
           <Col span={4} textAlign="center">
-            <Card cover={<img src={require('../../img/Go greener discovery.png')} alt="" />}>
+            <Card cover={<img src={go_greener_discovery} alt="" />}>
               <Meta title={intl.get('GREENER_DESC2')} style={{ textAlign: "center" }} />
             </Card>
           </Col>
           <Col span={16} textAlign="center">
-            <Card cover={<img src={require('../../img/02_EGGPLANT_CHEN SHIYI_REFINE_SKETCH.jpg')} alt="" />}>
+            <Card cover={<img src={go_greener_sketch} alt="" />}>
               <Meta title={intl.get('GREENER_DESC3')} style={{ textAlign: "center" }} />
             </Card>
           </Col>

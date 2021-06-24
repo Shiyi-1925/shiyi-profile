@@ -1,11 +1,8 @@
+import { Card, Col, Row, Typography } from 'antd';
 import React from 'react';
 import intl from 'react-intl-universal';
-import {
-  Typography,
-  Col,
-  Row,
-  Card,
-} from 'antd';
+import diagram_lifi from '../../img/diagram_lifi.png';
+import lifi_test from '../../img/lifi_test.png';
 
 
 const { Title, Paragraph } = Typography;
@@ -37,13 +34,13 @@ class Innov extends React.Component {
 
         <Row gutter={16} justify="center">
           <Col span={10}>
-            <Card cover={<img src={require('../../img/diagram_Lifi.png')} alt="" />}>
+            <Card cover={<img src={diagram_lifi} alt="" />}>
               <Meta title={intl.get('INNOV_DESC6')} style={{ textAlign: "center" }} description=
                 {intl.get('INNOV_DESC7')} />
             </Card>
           </Col>
           <Col span={10}>
-            <Card cover={<img src={require('../../img/Lifi_test.png')} alt="" />}>
+            <Card cover={<img src={lifi_test} alt="" />}>
               <Meta title={intl.get('INNOV_DESC8')} style={{ textAlign: "center" }} />
             </Card>
           </Col>

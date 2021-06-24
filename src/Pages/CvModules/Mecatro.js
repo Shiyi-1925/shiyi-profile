@@ -1,10 +1,8 @@
+import { Card, Col, Row, Typography } from 'antd';
 import React from 'react';
-import {
-  Typography,
-  Col,
-  Card,
-  Row
-} from 'antd';
+import broyeuse_catia from '../../img/broyeuse_catia.png';
+import broyeuse_entier from '../../img/broyeuse_entier.jpg';
+import extrudeuse from '../../img/extrudeuse.jpg';
 
 const { Title, Paragraph } = Typography;
 
@@ -32,17 +30,17 @@ class Mecatro extends React.Component {
 
         <Row gutter={24} justify="center">
           <Col span={8}>
-            <Card cover={<img src={require('../../img/broyeuse_entier.jpg')} alt="" />}>
+            <Card cover={<img src={broyeuse_entier} alt="" />}>
               <Meta title="切割机总布置图" style={{ textAlign: "center" }} />
             </Card>
           </Col>
           <Col span={8}>
-            <Card cover={<img src={require('../../img/extrudeuse.jpg')} alt="" />}>
+            <Card cover={<img src={extrudeuse} alt="" />}>
               <Meta title="搅拌机总布置图" style={{ textAlign: "center" }} />
             </Card>
           </Col>
           <Col span={8}>
-            <Card cover={<img src={require('../../img/broyeuse_catia.png')} alt="" />}>
+            <Card cover={<img src={broyeuse_catia} alt="" />}>
               <Meta title="切割机 Catia 模型" style={{ textAlign: "center" }} />
             </Card>
           </Col>

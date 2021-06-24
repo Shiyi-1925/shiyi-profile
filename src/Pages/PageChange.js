@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import PageProfile from './PageProfile'
 import PageAuto from './PageAuto'
-import PageDesign from './PageDesign'
 import PageContact from './PageContact'
+import PageDesign from './PageDesign'
+import PageProfile from './PageProfile'
 
 class PageChange extends React.Component {
     render() {

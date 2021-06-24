@@ -1,8 +1,8 @@
+import { Card, Col, Row, Typography } from 'antd';
 import React from 'react';
 import intl from 'react-intl-universal';
-import {
-  Typography, Row, Col, Card
-} from 'antd';
+import rubbish_1 from '../../img/rubbish_1.jpg';
+import rubbish_2 from '../../img/rubbish_2.jpg';
 
 const { Title, Paragraph } = Typography;
 
@@ -26,12 +26,12 @@ class RubbishBin extends React.Component {
 
         <Row gutter={24} justify="center">
           <Col span={10}>
-            <Card cover={<img src={require('../../img/rubbish_1.JPG')} alt="" />}>
+            <Card cover={<img src={rubbish_1} alt="" />}>
               <Meta title={intl.get('BIN_DESC7')} style={{ textAlign: "center" }} />
             </Card>
           </Col>
           <Col span={10}>
-            <Card cover={<img src={require('../../img/rubbish_2.JPG')} alt="" />}>
+            <Card cover={<img src={rubbish_2} alt="" />}>
               <Meta title={intl.get('BIN_DESC8')} style={{ textAlign: "center" }} />
             </Card>
           </Col>

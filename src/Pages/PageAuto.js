@@ -1,18 +1,12 @@
+import { Timeline } from 'antd';
 import React from 'react';
 import intl from 'react-intl-universal';
-import H4R from './CvModules/H4R';
 import Bounce from './CvModules/Bounce';
-import Nio from './CvModules/Nio';
-// import Mecatro from './CvModules/Mecatro';
-import Ramp from './CvModules/Ramp';
+import H4R from './CvModules/H4R';
 import Innov from './CvModules/Innov';
 import Michelin from './CvModules/Michelin';
-// import Suspension from './CvModules/Suspension';
-// import Laplus from './CvModules/Laplus';
-// import MecaDesign from './CvModules/MecaDesign';
-import {
-  Timeline,
-} from 'antd';
+import Nio from './CvModules/Nio';
+import Ramp from './CvModules/Ramp';
 
 class PageAuto extends React.Component {
   render() {

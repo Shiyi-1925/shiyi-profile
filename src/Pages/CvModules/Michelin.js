@@ -1,11 +1,8 @@
+import { Card, Col, Row, Typography } from 'antd';
 import React from 'react';
 import intl from 'react-intl-universal';
-import {
-  Typography,
-  Col,
-  Row,
-  Card
-} from 'antd';
+import cleat_opt_l_xdir from '../../img/cleat_opt_l_xdir.jpg';
+import ftire_test from '../../img/ftire_test.gif';
 
 
 const { Title, Paragraph } = Typography;
@@ -25,12 +22,12 @@ class Michelin extends React.Component {
 
         <Row gutter={[16, 16]} justify="center">
           <Col span={10}>
-            <Card cover={<img src={require('../../img/ftire_test.gif')} alt="" />}>
+            <Card cover={<img src={ftire_test} alt="" />}>
               <Meta title={intl.get('MICHELIN_DESC2')} style={{ textAlign: "center" }} />
             </Card>
           </Col>
           <Col span={10}>
-            <Card cover={<img src={require('../../img/cleat_opt_L_xdir.jpg')} alt="" />}>
+            <Card cover={<img src={cleat_opt_l_xdir} alt="" />}>
               <Meta title={intl.get('MICHELIN_DESC3')} style={{ textAlign: "center" }} />
             </Card>
           </Col>

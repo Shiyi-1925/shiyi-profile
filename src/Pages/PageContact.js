@@ -1,8 +1,6 @@
+import { Descriptions } from 'antd';
 import React from 'react';
 import intl from 'react-intl-universal';
-import {
-    Descriptions,
-} from 'antd';
 
 const Tel = "+33 7 62 28 68 62";
 const Address = "shiyi.chen@mines-paristech.fr";

@@ -1,15 +1,8 @@
+import { ClearOutlined, LaptopOutlined, ToolOutlined } from '@ant-design/icons';
+import { Avatar, Card, Col, Row, Statistic, Steps, Tag, Typography } from 'antd';
 import React from 'react';
 import intl from 'react-intl-universal';
-
-import {
-    Steps, Tag, Statistic, Avatar, Card, Col, Row, Typography
-} from 'antd';
-
-import {
-    ToolOutlined,
-    LaptopOutlined,
-    ClearOutlined
-  } from '@ant-design/icons';
+import profile_pic from '../img/profile_pic.jpg';
 
 const { Step } = Steps;
 
@@ -27,7 +20,7 @@ class PageProfile extends React.Component {
                 <div className="site-layout-background" style={{ padding: 24, textAlign: 'center' }}>
                     <Row align="middle">
                         <Col span={4} >
-                            <Avatar src={require('../img/Profilepic.jpg')} alt="" size={180} />
+                            <Avatar src={profile_pic} alt="" size={180} />
                         </Col>
 
                         <Col span={4}>

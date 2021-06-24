@@ -101,7 +101,6 @@
     "YEAR": "years",
     "H4R": "Product development intern in #HereForRetail, Paris",
     "H4R_DESC1": "Development of data analytics and strategy platform",
-    "H4R_DESC2":"Responsible for cloud data storage and execution time optimization",
-    "H4R_DESC3":"Studies on data pre-processing based on PySpark and its cloud deployment (Docker, Kubernetes, Azure Blob Storage)"
-
+    "H4R_DESC2": "Responsible for cloud data storage and execution time optimization",
+    "H4R_DESC3": "Studies on data pre-processing based on PySpark and its cloud deployment (Docker, Kubernetes, Azure Blob Storage)"
 }

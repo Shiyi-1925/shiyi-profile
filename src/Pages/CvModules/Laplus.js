@@ -1,11 +1,8 @@
+import { Card, Col, Row, Typography } from 'antd';
 import React from 'react';
-import {
-  Typography,
-  Col,
-  Row,
-  Card
-} from 'antd';
-
+import laplus_market from '../../img/laplus_market.jpg';
+import laplus_position from '../../img/laplus_position.jpg';
+import laplus_target from '../../img/laplus_target.jpg';
 
 const { Title, Paragraph } = Typography;
 
@@ -27,17 +24,17 @@ class Laplus extends React.Component {
 
         <Row gutter={16} justify="center">
           <Col span={8}>
-            <Card cover={<img src={require('../../img/LaPlus_market.jpg')} alt="" />}>
+            <Card cover={<img src={laplus_market} alt="" />}>
               <Meta title="前期市场分析" style={{ textAlign: "center" }} />
             </Card>
           </Col>
           <Col span={8}>
-            <Card cover={<img src={require('../../img/LaPlus_target.jpg')} alt="" />}>
+            <Card cover={<img src={laplus_target} alt="" />}>
               <Meta title="目标客户群体" style={{ textAlign: "center" }} />
             </Card>
           </Col>
           <Col span={8}>
-            <Card cover={<img src={require('../../img/LaPlus_position.jpg')} alt="" />}>
+            <Card cover={<img src={laplus_position} alt="" />}>
               <Meta title="产品市场定位" style={{ textAlign: "center" }} />
             </Card>
           </Col>

@@ -1,8 +1,8 @@
+import { Card, Col, Row, Typography } from 'antd';
 import React from 'react';
 import intl from 'react-intl-universal';
-import {
-  Typography, Row, Col, Card
-} from 'antd';
+import mecatro1 from '../../img/mecatro1.png';
+import newsletter_v2 from '../../img/newsletter_v2.jpg';
 
 const { Title, Paragraph } = Typography;
 
@@ -19,12 +19,12 @@ class Site extends React.Component {
         </Typography>
         <Row guttuer={16} justify="space-around" align="top">
           <Col span={10} textAlign="center">
-            <Card cover={<img src={require('../../img/sites.google.com_view_2019-2020-gr10_home(iPad Pro).png')} alt="" />}>
+            <Card cover={<img src={mecatro1} alt="" />}>
               <Meta title={intl.get('SITE_DESC3')} style={{ textAlign: "center" }} />
             </Card>
           </Col>
           <Col span={10} textAlign="center">
-            <Card cover={<img src={require('../../img/Newsletter_3_Shiyi_V2.jpg')} alt="" />}>
+            <Card cover={<img src={newsletter_v2} alt="" />}>
               <Meta title={intl.get('SITE_DESC4')} style={{ textAlign: "center" }} />
             </Card>
           </Col>

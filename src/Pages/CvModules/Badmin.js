@@ -1,8 +1,10 @@
+import { Card, Carousel, Col, Row, Typography } from 'antd';
 import React from 'react';
 import intl from 'react-intl-universal';
-import {
-  Typography, Carousel, Row, Card, Col
-} from 'antd';
+import badm_card from '../../img/2016_badm_card.jpg';
+import badm_handbook1 from '../../img/2016_badm_handbook1.jpg';
+import badm_handbook2 from '../../img/2016_badm_handbook2.jpg';
+import badm_poster from '../../img/2016_badm_poster.jpg';
 
 const { Title, Paragraph } = Typography;
 
@@ -20,10 +22,10 @@ class Badmin extends React.Component {
         <Row gutter={[16, 16]} justify="center" align="middle">
           <Col span={12} textAlign="center">
             <Carousel autoplay>
-              <Card cover={<img src={require('../../img/2016秋季嘉定羽协会员手册-外.jpg')} alt="" />}>
+              <Card cover={<img src={badm_handbook2} alt="" />}>
                 <Meta title={intl.get('BADMIN_DESIGN_DESC2')} style={{ textAlign: "center" }} />
               </Card>
-              <Card cover={<img src={require('../../img/2016秋季嘉定羽协会员手册-内.jpg')} alt="" />}>
+              <Card cover={<img src={badm_handbook1} alt="" />}>
                 <Meta title={intl.get('BADMIN_DESIGN_DESC3')} style={{ textAlign: "center" }} />
               </Card>
             </Carousel>
@@ -31,12 +33,12 @@ class Badmin extends React.Component {
         </Row>
         <Row gutter={[16, 16]} justify="space-around">
           <Col span={8} textAlign="center">
-            <Card cover={<img src={require('../../img/2016嘉定羽协活动卡.jpg')} alt="" />}>
+            <Card cover={<img src={badm_card} alt="" />}>
               <Meta title={intl.get('BADMIN_DESIGN_DESC4')} style={{ textAlign: "center" }} />
             </Card>
           </Col>
           <Col span={8} textAlign="center">
-            <Card cover={<img src={require('../../img/2016秋嘉定羽协招新海报.jpg')} alt="" />}>
+            <Card cover={<img src={badm_poster} alt="" />}>
               <Meta title={intl.get('BADMIN_DESIGN_DESC5')} style={{ textAlign: "center" }} />
             </Card>
           </Col>
